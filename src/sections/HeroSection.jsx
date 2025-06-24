@@ -10,7 +10,18 @@ return (
             <Card className="hero-card">
                 <div className="hero-grid">
                     <div className="hero-text-content">
-                        <h1 className="hero-headline">Transform Your Ideas Into Reality</h1>
+                        <h1
+                            className="hero-headline gradient-animate"
+                            style={{
+                                background: 'linear-gradient(90deg, #6a11cb 0%, #2575fc 100%)',
+                                WebkitBackgroundClip: 'text',
+                                WebkitTextFillColor: 'transparent',
+                                backgroundClip: 'text',
+                                animation: 'gradient-move 3s ease-in-out infinite alternate'
+                            }}
+                        >
+                            Transform Your Ideas Into Reality
+                        </h1>
                         <p className="hero-description">Join our incubation center and get access to mentorship, resources, and funding to make your startup dreams come true. We provide the fertile ground for innovation to flourish.</p>
                         <Button
                             className="hero-cta-button"
@@ -35,6 +46,21 @@ return (
                 </div>
             </Card>
         </div>
+        <style>
+            {`
+                @keyframes gradient-move {
+                    0% {
+                        background-position: 0% 50%;
+                    }
+                    100% {
+                        background-position: 100% 50%;
+                    }
+                }
+                .gradient-animate {
+                    background-size: 200% 200%;
+                }
+            `}
+        </style>
     </section>
 );
 };
