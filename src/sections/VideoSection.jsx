@@ -6,7 +6,7 @@ const VideoSection = () => {
   // IMPORTANT: Place your video file (e.g., my-company-intro.mp4) inside your public/videos/ directory.
   // Then, replace the placeholder URL below with the actual path to your video.
   // Example: const videoSrc = "/videos/my-company-intro.mp4";
-  const videoSrc = "public/ITBI 14_05_2024 (1).mp4"; // Placeholder video URL for demonstration
+  const videoSrc = "/ITBI 14_05_2024 (1).mp4"; // Placeholder video URL for demonstration
 
   return (
     <section id="video-tour" className="video-section">

@@ -22,7 +22,7 @@ return (
                     <Card className="hero-image-card">
                         <video
                             className="hero-video"
-                            src="public/Hero_section_video1.mp4"
+                            src="/Hero_section_video1.mp4"
                             autoPlay
                             muted
                             playsInline
